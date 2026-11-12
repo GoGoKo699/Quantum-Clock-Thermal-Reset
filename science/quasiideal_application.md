@@ -8,7 +8,7 @@ Fix $`g>0`$ and a fixed exponent loss $`0<\varepsilon<1`$. For all sufficiently 
 
 ```math
 \begin{aligned}
-\|H_d\|&<g/4,\\
+\|H_d\|&\lt g/4,\\
 g d^{-3}I\ \leq\ Q_d:=\sum_kJ_{d,k}^{\dagger}J_{d,k}&\leq gI,\\
 \frac{2\pi}{3}\frac d g\ \leq\ \mu_d:=\mathbb EX_d&\leq8\pi\frac d g,\\
 \frac{\mathrm{Var}X_d}{\mu_d^2}&\leq24d^{-2+\varepsilon},\\
@@ -51,7 +51,7 @@ The source's parameter $`\eta`$ in Eqs. (F243)–(F245) is $`\xi`$ here. The sou
 3-4\epsilon_5-\epsilon_9>0.
 ```
 
-The additional constraint $`4/\sigma_d<d^{\xi/2}\leq d/\sigma_d`$ holds eventually: its upper inequality is $`5\xi/2\leq1`$. The source's filter-order formula (F18), equivalently (F239), reduces exactly to the stated $`N_{\rm f}`$.
+The additional constraint $`4/\sigma_d\lt d^{\xi/2}\leq d/\sigma_d`$ holds eventually: its upper inequality is $`5\xi/2\leq1`$. The source's filter-order formula (F18), equivalently (F239), reduces exactly to the stated $`N_{\rm f}`$.
 
 At source period one, define
 
@@ -69,7 +69,7 @@ The normalized initial state from Eqs. (F25)–(F30) is
 A_d\sum_{k\in\mathcal S_d(0)}
 e^{-\pi k^2/\sigma_d^2}e^{2\pi i n_0k/d}|\theta_k\rangle,
 \qquad
-\mathcal S_d(0)=\{k\in\mathbb Z:-d/2<k\leq d/2\}.
+\mathcal S_d(0)=\{k\in\mathbb Z:-d/2\lt k\leq d/2\}.
 ```
 
 Fourier labels are taken modulo $`d`$ and $`A_d`$ is the normalization. The midpoint choice of $`n_0`$ gives $`\alpha_0=1`$.
@@ -135,7 +135,7 @@ H_d=\lambda_d\left(H_d^{(1)}-\pi(d-1)I\right),\qquad
 J_{d,k}=\sqrt{\lambda_d}\,J_{d,k}^{(1)}.
 ```
 
-This multiplies all waiting times by $`1/\lambda_d`$ and leaves their coefficient of variation unchanged. It gives $`\|H_d\|=g(d-1)/(4d)<g/4`$, and
+This multiplies all waiting times by $`1/\lambda_d`$ and leaves their coefficient of variation unchanged. It gives $`\|H_d\|=g(d-1)/(4d)\lt g/4`$, and
 
 ```math
 \begin{aligned}

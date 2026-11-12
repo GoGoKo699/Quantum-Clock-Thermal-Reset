@@ -41,7 +41,7 @@ Here $`m`$ has energy zero, all core states have bare energy $`q`$, and $`e`$ ha
 [H_0,|e\rangle\langle m|]=2q|e\rangle\langle m|.
 ```
 
-Consequently, the two downward cold transitions release energy $`q`$ each, and the hot upward transition absorbs energy $`2q`$. A hot-to-cold device has $`0<\beta_H<\beta_C`$, equivalently $`z^2<h<1`$.
+Consequently, the two downward cold transitions release energy $`q`$ each, and the hot upward transition absorbs energy $`2q`$. A hot-to-cold device has $`0<\beta_H<\beta_C`$, equivalently $`z^2\lt h<1`$.
 
 The capture operators need not be Bohr eigenoperators of the fully split core Hamiltonian. Their eigenoperator property above is with respect to $`H_0`$. Merely writing adjoint jump pairs with scalar rate ratios would not justify a thermal interpretation relative to an arbitrary full Hamiltonian.
 

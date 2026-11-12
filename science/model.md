@@ -78,7 +78,7 @@ Let $`X`$ be the first ideal tick time from $`P_\psi`$, and write
 =n!\mathrm{Tr}\!\left[\mathcal R_C^n(P_\psi)\right].
 ```
 
-In particular, $`\mu\le B_C`$. The recycling theorem does not require a Hamiltonian norm bound, but a comparison at bounded coherent strength must impose one separately. The [quasiideal application](quasiideal_application.md) uses $`\min_c\|H-cI_C\|_\infty<g/4`$ in addition to $`Q\le gI_C`$.
+In particular, $`\mu\le B_C`$. The recycling theorem does not require a Hamiltonian norm bound, but a comparison at bounded coherent strength must impose one separately. The [quasiideal application](quasiideal_application.md) uses $`\min_c\|H-cI_C\|_\infty\lt g/4`$ in addition to $`Q\le gI_C`$.
 
 ## 2. The enlarged clock
 
