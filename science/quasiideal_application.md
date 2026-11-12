@@ -8,10 +8,10 @@ Fix $`g>0`$ and a fixed exponent loss $`0<\varepsilon<1`$. For all sufficiently 
 
 ```math
 \begin{aligned}
-\|H_d\|&<g/4,\\
+\|H_d\|&\lt g/4,\\
 g d^{-3}I\ \leq\ Q_d:=\sum_kJ_{d,k}^{\dagger}J_{d,k}&\leq gI,\\
 \frac{2\pi}{3}\frac d g\ \leq\ \mu_d:=\mathbb EX_d&\leq8\pi\frac d g,\\
-\frac{\operatorname{Var}X_d}{\mu_d^2}&\leq24d^{-2+\varepsilon},\\
+\frac{\mathrm{Var}X_d}{\mu_d^2}&\leq24d^{-2+\varepsilon},\\
 B_{C,d}:=\|(-K_d)^{-1}\|_{1\to1}&\leq\frac{d^3}{g}.
 \end{aligned}
 ```
@@ -51,7 +51,7 @@ The source's parameter $`\eta`$ in Eqs. (F243)–(F245) is $`\xi`$ here. The sou
 3-4\epsilon_5-\epsilon_9>0.
 ```
 
-The additional constraint $`4/\sigma_d<d^{\xi/2}\leq d/\sigma_d`$ holds eventually: its upper inequality is $`5\xi/2\leq1`$. The source's filter-order formula (F18), equivalently (F239), reduces exactly to the stated $`N_{\rm f}`$.
+The additional constraint $`4/\sigma_d\lt d^{\xi/2}\leq d/\sigma_d`$ holds eventually: its upper inequality is $`5\xi/2\leq1`$. The source's filter-order formula (F18), equivalently (F239), reduces exactly to the stated $`N_{\rm f}`$.
 
 At source period one, define
 
@@ -69,7 +69,7 @@ The normalized initial state from Eqs. (F25)–(F30) is
 A_d\sum_{k\in\mathcal S_d(0)}
 e^{-\pi k^2/\sigma_d^2}e^{2\pi i n_0k/d}|\theta_k\rangle,
 \qquad
-\mathcal S_d(0)=\{k\in\mathbb Z:-d/2<k\leq d/2\}.
+\mathcal S_d(0)=\{k\in\mathbb Z:-d/2\lt k\leq d/2\}.
 ```
 
 Fourier labels are taken modulo $`d`$ and $`A_d`$ is the normalization. The midpoint choice of $`n_0`$ gives $`\alpha_0=1`$.
@@ -78,8 +78,8 @@ For the positive absorption potential of Eqs. (F14)–(F24), let
 
 ```math
 \begin{aligned}
-I_{N_{\rm f}}&=\int_{\mathbb R}\operatorname{sinc}^{2N_{\rm f}}(x)\,dx,
-&\operatorname{sinc}(x)&=\frac{\sin(\pi x)}{\pi x},\\
+I_{N_{\rm f}}&=\int_{\mathbb R}\mathrm{sinc}^{2N_{\rm f}}(x)\,dx,
+&\mathrm{sinc}(x)&=\frac{\sin(\pi x)}{\pi x},\\
 C_0&=1+2\pi N_{\rm f}+\frac{2N_{\rm f}+1}{I_{N_{\rm f}}},
 &\nu_d&=\frac{\log(\pi\sigma_d^2)}{2\pi C_0\kappa}
 \frac{d^{1-\xi/16}}{\delta_{\rm s}\sigma_d},\\
@@ -97,7 +97,7 @@ The scale $`\nu_d`$ need not be an integer. It tends to infinity. Define
 b_d&=\frac{1-2\pi/(\delta_{\rm s}d^2)}{I_{N_{\rm f}}},\\
 \bar V_{0,d}(x)&=\frac1{\delta_{\rm s}d^2}
 +\nu_d b_d\sum_{p\in\mathbb Z}
-\operatorname{sinc}^{2N_{\rm f}}\!\left(\nu_d(x-x_0-2\pi p)\right).
+\mathrm{sinc}^{2N_{\rm f}}\!\left(\nu_d(x-x_0-2\pi p)\right).
 \end{aligned}
 ```
 
@@ -120,7 +120,7 @@ Q_d^{(1)}=\sum_kJ_{d,k}^{(1)\dagger}J_{d,k}^{(1)}=2V_d^{(1)}.
 
 ### Summed effect, physical scale and resolvent
 
-The explicit $`C_0`$ satisfies the source's derivative bound (F20), proved in Lemma 28. One can check it directly: the Fourier transform of $`\operatorname{sinc}^{2N_{\rm f}}`$ is the $`N_{\rm f}`$-fold convolution of the triangular density, supported in $`[-N_{\rm f},N_{\rm f}]`$ and bounded by one. The periodic potential therefore has Fourier modes only at $`|\ell|\leq2\pi\nu_dN_{\rm f}`$. Summing their absolute values bounds its supremum by $`\nu_d[1+(2N_{\rm f}+1)/I_{N_{\rm f}}]`$; an $`r`$th derivative adds at most $`(2\pi\nu_dN_{\rm f})^r`$. The chosen $`C_0`$ bounds both constants, giving
+The explicit $`C_0`$ satisfies the source's derivative bound (F20), proved in Lemma 28. One can check it directly: the Fourier transform of $`\mathrm{sinc}^{2N_{\rm f}}`$ is the $`N_{\rm f}`$-fold convolution of the triangular density, supported in $`[-N_{\rm f},N_{\rm f}]`$ and bounded by one. The periodic potential therefore has Fourier modes only at $`|\ell|\leq2\pi\nu_dN_{\rm f}`$. Summing their absolute values bounds its supremum by $`\nu_d[1+(2N_{\rm f}+1)/I_{N_{\rm f}}]`$; an $`r`$th derivative adds at most $`(2\pi\nu_dN_{\rm f})^r`$. The chosen $`C_0`$ bounds both constants, giving
 
 ```math
 \sup_x|\bar V_{0,d}^{(r)}(x)|\leq\nu_d^{r+1}C_0^{r+1},
@@ -135,7 +135,7 @@ H_d=\lambda_d\left(H_d^{(1)}-\pi(d-1)I\right),\qquad
 J_{d,k}=\sqrt{\lambda_d}\,J_{d,k}^{(1)}.
 ```
 
-This multiplies all waiting times by $`1/\lambda_d`$ and leaves their coefficient of variation unchanged. It gives $`\|H_d\|=g(d-1)/(4d)<g/4`$, and
+This multiplies all waiting times by $`1/\lambda_d`$ and leaves their coefficient of variation unchanged. It gives $`\|H_d\|=g(d-1)/(4d)\lt g/4`$, and
 
 ```math
 \begin{aligned}
@@ -151,9 +151,9 @@ In particular, $`Q_d\leq gI`$ eventually. This accounts for the sum of all $`d`$
 For every initial density matrix, the no-tick survival obeys
 
 ```math
-\frac{d}{dt}\operatorname{tr}(e^{tK_d}\rho)
-=-\operatorname{tr}(Q_de^{tK_d}\rho)
-\leq-gd^{-3}\operatorname{tr}(e^{tK_d}\rho).
+\frac{d}{dt}\mathrm{tr}(e^{tK_d}\rho)
+=-\mathrm{tr}(Q_de^{tK_d}\rho)
+\leq-gd^{-3}\mathrm{tr}(e^{tK_d}\rho).
 ```
 
 Consequently $`\|e^{tK_d}\|_{1\to1}\leq e^{-gt/d^3}`$ and
@@ -170,7 +170,7 @@ The trace-norm statement follows from complete positivity, equivalently from the
 Equation (F243), with the parameters above, gives the clean precision
 
 ```math
-\frac{(\mathbb EX_d^{(1)})^2}{\operatorname{Var}X_d^{(1)}}
+\frac{(\mathbb EX_d^{(1)})^2}{\mathrm{Var}X_d^{(1)}}
 \geq\frac1{12}\frac{d^{2-\xi}}{\sigma_d^2}
 +o\!\left(\frac{d^{2-\xi}}{\sigma_d^2}\right)
 =\frac1{12}d^{2-\varepsilon}+o(d^{2-\varepsilon}).
@@ -206,7 +206,7 @@ The lower and upper survival bounds therefore imply
 For large $`d`$, both useful probabilities, $`\Pr(X_d^{(1)}\geq1/3)`$ and $`\Pr(X_d^{(1)}\leq1)`$, are at least one half. The first gives $`\mathbb EX_d^{(1)}\geq1/6`$. If the mean were greater than two, the second would give
 
 ```math
-\operatorname{Var}X_d^{(1)}
+\mathrm{Var}X_d^{(1)}
 \geq\tfrac12(\mathbb EX_d^{(1)}-1)^2
 >\tfrac18(\mathbb EX_d^{(1)})^2,
 ```
@@ -253,7 +253,7 @@ The reference reset delay $`R_{h_d}`$ has exact moments
 r_{h_d}:=\mathbb ER_{h_d}&=\frac{1+2/h_d}{g}
 =O(d^{22\theta}/g),\\
 s_{h_d}:=\mathbb ER_{h_d}^2&=\frac{2+6/h_d+8/h_d^2}{g^2},\\
-\operatorname{Var}R_{h_d}&=\frac{1+2/h_d+4/h_d^2}{g^2}
+\mathrm{Var}R_{h_d}&=\frac{1+2/h_d+4/h_d^2}{g^2}
 =O(d^{44\theta}/g^2).
 \end{aligned}
 ```
@@ -264,7 +264,7 @@ The independent reference interval is $`T_0=R_{h_d}+X_d`$. Hence
 \begin{aligned}
 \mu_0&=\mu_d+r_{h_d}=\Theta_\eta(d/g),\\
 v_0&=\mathbb EX_d^2+2\mu_dr_{h_d}+s_{h_d},\\
-F_0&=\frac{\operatorname{Var}X_d+\operatorname{Var}R_{h_d}}{\mu_0^2}
+F_0&=\frac{\mathrm{Var}X_d+\mathrm{Var}R_{h_d}}{\mu_0^2}
 =O_\eta(d^{-2+\eta}).
 \end{aligned}
 ```
@@ -275,7 +275,7 @@ The clean lemma and the compiler's norm estimates give, eventually,
 
 ```math
 B=B_{C,d}+r_{h_d}\leq2d^3/g,\qquad
-a=\operatorname{Tr}Q_d\leq dg,\qquad
+a=\mathrm{Tr}Q_d\leq dg,\qquad
 \Lambda=2(a+g)\leq4dg,\qquad
 \delta=z_d\Lambda\leq4g d^{-10}.
 ```
@@ -304,7 +304,7 @@ Let $`N(t)`$ count positive captures minus reverse captures, and define
 
 ```math
 j=\lim_{t\to\infty}\frac{\mathbb EN(t)}t,\qquad
-D_{\rm count}=\lim_{t\to\infty}\frac{\operatorname{Var}N(t)}t,
+D_{\rm count}=\lim_{t\to\infty}\frac{\mathrm{Var}N(t)}t,
 \qquad F=D_{\rm count}/j.
 ```
 
@@ -315,14 +315,14 @@ For the constructed family, at fixed $`g`$, $`\eta`$ and chosen temperatures,
 \mathcal P:=\frac1F\geq c_\eta d^{2-\eta},\qquad
 j=\Theta_\eta(g/d),\qquad
 D_{\rm time}:=\lim_{t\to\infty}
-\frac{\operatorname{Var}[N(t)/j]}t
+\frac{\mathrm{Var}[N(t)/j]}t
 =\frac Fj\leq\frac{C_\eta}{g}d^{-1+\eta}.
 }
 ```
 
 The calibrated estimator uses the supplied actual current $`j`$. The [long-time signed-current precision](counting_statistics.md) $`\mathcal P`$ is not the reciprocal coefficient of variation of positive capture intervals once reverse captures occur. The relation $`D_{\rm time}=F/j`$ shows why the result remains useful for time estimation despite the growing mean period. Under the same total event-rate allowance, the [classical comparison](classical_comparison.md) gives $`D_{\rm time}\geq1/(2g)`$.
 
-The full compiled device has $`d+2`$ states. Its sum of all jump effects is at most $`2gI`$: on the core it is $`Q_d+z_dgP_{\psi_d}`$, on $`m`$ it is $`gh_d+z_d\operatorname{Tr}Q_d`$, and on $`e`$ it is $`2g`$. This includes every modeled capture, reverse event, release and hot transition. There are $`d`$ capture channels and their reverses; the two-state increase does not imply a dimension-independent number of engineered bath channels.
+The full compiled device has $`d+2`$ states. Its sum of all jump effects is at most $`2gI`$: on the core it is $`Q_d+z_dgP_{\psi_d}`$, on $`m`$ it is $`gh_d+z_d\mathrm{Tr}Q_d`$, and on $`e`$ it is $`2g`$. This includes every modeled capture, reverse event, release and hot transition. There are $`d`$ capture channels and their reverses; the two-state increase does not imply a dimension-independent number of engineered bath channels.
 
 In the [bare-energy thermodynamic model](thermodynamics.md), the entropy per net tick is exactly
 

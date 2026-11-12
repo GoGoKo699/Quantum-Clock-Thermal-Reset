@@ -72,20 +72,20 @@ Let $`X`$ be the first ideal tick time from $`P_\psi`$, and write
 ```math
 \mu=\mathbb E X,
 \qquad
-\sigma^2=\operatorname{Var}X,
+\sigma^2=\mathrm{Var}X,
 \qquad
 \mathbb E X^n
-=n!\operatorname{Tr}\!\left[\mathcal R_C^n(P_\psi)\right].
+=n!\mathrm{Tr}\!\left[\mathcal R_C^n(P_\psi)\right].
 ```
 
-In particular, $`\mu\le B_C`$. The recycling theorem does not require a Hamiltonian norm bound, but a comparison at bounded coherent strength must impose one separately. The [quasiideal application](quasiideal_application.md) uses $`\min_c\|H-cI_C\|_\infty<g/4`$ in addition to $`Q\le gI_C`$.
+In particular, $`\mu\le B_C`$. The recycling theorem does not require a Hamiltonian norm bound, but a comparison at bounded coherent strength must impose one separately. The [quasiideal application](quasiideal_application.md) uses $`\min_c\|H-cI_C\|_\infty\lt g/4`$ in addition to $`Q\le gI_C`$.
 
 ## 2. The enlarged clock
 
 Add two orthogonal states $`|m\rangle`$ and $`|e\rangle`$:
 
 ```math
-\mathcal H=\mathcal H_C\oplus\operatorname{span}\{|m\rangle,|e\rangle\},
+\mathcal H=\mathcal H_C\oplus\mathrm{span}\{|m\rangle,|e\rangle\},
 \qquad
 \dim\mathcal H=d+2.
 ```
@@ -115,7 +115,7 @@ to obtain the physical system Hamiltonian $`H_0+(H\oplus0)`$. It assigns energie
 
 ### Count the complete device activity
 
-Write $`a=\operatorname{Tr}Q\le dg`$. The sum of the effects of every physical jump is exactly
+Write $`a=\mathrm{Tr}Q\le dg`$. The sum of the effects of every physical jump is exactly
 
 ```math
 \sum_\alpha L_\alpha^\dagger L_\alpha
@@ -162,7 +162,7 @@ When the net current is positive, define
 ```math
 j=\lim_{t\to\infty}\frac{\mathbb E N(t)}t,
 \qquad
-D_N=\lim_{t\to\infty}\frac{\operatorname{Var}N(t)}t,
+D_N=\lim_{t\to\infty}\frac{\mathrm{Var}N(t)}t,
 \qquad
 F=\frac{D_N}{j},
 \qquad
@@ -173,7 +173,7 @@ There is no factor of two in the definition of $`D_N`$. The elapsed-time estimat
 
 ```math
 D_{\mathrm{time}}
-=\lim_{t\to\infty}\frac{\operatorname{Var}\widehat t}{t}
+=\lim_{t\to\infty}\frac{\mathrm{Var}\widehat t}{t}
 =\frac{D_N}{j^2}
 =\frac Fj.
 ```

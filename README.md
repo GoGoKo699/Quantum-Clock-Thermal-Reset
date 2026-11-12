@@ -10,7 +10,7 @@ j_d=\Theta_\eta(g/d),\qquad
 gD_{{\rm time},d}\le C_\eta d^{-1+\eta}\longrightarrow0.
 ```
 
-Here $`P=j/D_N`$ is signed-count precision, $`D_N=\lim_{t\to\infty}\operatorname{Var}N(t)/t`$, and $`D_{\rm time}=D_N/j^2`$ is the variance growth rate of the calibrated estimate $`N(t)/j`$. Every physical jump in the enlarged device is charged to the common bound $`\sum_\alpha L_\alpha^\dagger L_\alpha\le2gI`$.
+Here $`P=j/D_N`$ is signed-count precision, $`D_N=\lim_{t\to\infty}\mathrm{Var}N(t)/t`$, and $`D_{\rm time}=D_N/j^2`$ is the variance growth rate of the calibrated estimate $`N(t)/j`$. Every physical jump in the enlarged device is charged to the common bound $`\sum_\alpha L_\alpha^\dagger L_\alpha\le2gI`$.
 
 Under the same complete-device event-rate budget, every finite-state classical Markov clock satisfies
 
@@ -61,6 +61,22 @@ The [scientific overview](science/README.md) gives the complete reading route. T
 | Reproducible finite calculations and their limits | [Verification](verification/README.md) |
 
 The quasiideal core is inherited from Woods et al. The serial thermal bridge and logarithmic-affinity strategy have direct antecedents in Meier et al. The added result is a quantitative bound for the retained finite-rate interface and its simultaneous dimension, entropy and elapsed-time consequences; the [comparison](references/RELATED_WORK.md) credits those dependencies explicitly.
+
+## Learn the project
+
+The single educational anchor is **Landi, Kewming, Mitchison and Potts, *Current Fluctuations in Open Quantum Systems* (2024)**. The [source bridge](learning/anchor_bridge.md) gives a short section route, translates notation, and connects the review's jump and counting framework to the finite thermal reset. A complete three-state example shows why positive-capture intervals and signed ticks have different fluctuations.
+
+The [30-milestone map](learning/milestones.md) follows the project's scientific structure. Its 12 background milestones connect individual events to waiting times, signed records and thermal pairs; its 18 narrative milestones assemble the finite-rate proof, inherited input family, classical comparison and resource account. The [learning overview](learning/README.md) provides routes by question, and the [LLM reading guide](llms.txt) identifies authoritative files.
+
+## Reproduce the finite checks
+
+From the repository root, with the versions in [verification/requirements.txt](verification/requirements.txt), run:
+
+```bash
+python verification/check_clock.py --output /tmp/quantum_clock_finite_results.json
+```
+
+The program performs 256 checks in four finite examples, comparing regenerative block moments, stationary response and tilted-generator derivatives. It also checks reset-time moments, complete jump activity, heat balance and an equal-temperature stall. These examples test the formulas and conventions; the written arguments and cited source theorem establish the asymptotic advantage. The [verification guide](verification/README.md) explains the calculations and their limits.
 
 ## Scope
 

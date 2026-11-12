@@ -19,6 +19,18 @@ The central result is a quantitative bound on signed-count precision for the ful
 - Reproduction instructions and limits of finite checks: verification/README.md
 - Numerical implementation and recorded outputs: verification/check_clock.py, verification/finite_results.json
 
+## Learning route
+
+The educational anchor is Landi, Kewming, Mitchison and Potts, Current Fluctuations in Open Quantum Systems, PRX Quantum 5, 020201 (2024). Full counting statistics is Section IV; solution methods are Section V. The bridge identifies the needed passages and connects them to the project.
+
+- Learning entrypoint and question-based reading routes: learning/README.md
+- Single educational anchor, notation translation and complete three-state example: learning/anchor_bridge.md
+- Thirty project-intrinsic understanding targets, dependencies and source pointers: learning/milestones.md
+
+Milestones M01-M12 build the background from individual jumps to two consistent statistical descriptions of a clock. M13-M30 connect the retained reset, finite-rate bounds, heat accounting, quasiideal input and classical benchmark. M12 and M30 synthesize their respective phases. These are common scientific understanding targets.
+
+For a concrete calculation, use the bridge's three-state example. Its signed Fano factor differs from the positive-capture Fano factor; the example illustrates conventions and the asymptotic quantum advantage relies on the higher-dimensional core.
+
 ## Distinctions to preserve
 
 - P=j/D_N; D_N is variance per unit time with no factor of two. D_time=D_N/j^2=1/(jP). The actual mean current is supplied.

@@ -10,7 +10,7 @@ Let $`\mathcal H_C`$ be the $`d`$-dimensional clock core, with Hamiltonian $`H_C
 
 ```math
 Q=\sum_{k=1}^{K}|v_k\rangle\langle v_k|\le g I_C,
-\qquad a=\operatorname{Tr}Q.
+\qquad a=\mathrm{Tr}Q.
 ```
 
 Add orthogonal states $`|m\rangle,|e\rangle`$. Write $`P_m=|m\rangle\langle m|`$, $`P_e=|e\rangle\langle e|`$, and extend $`H_C`$ by zero on the auxiliary states. The jump pairs are
@@ -41,14 +41,14 @@ Here $`m`$ has energy zero, all core states have bare energy $`q`$, and $`e`$ ha
 [H_0,|e\rangle\langle m|]=2q|e\rangle\langle m|.
 ```
 
-Consequently, the two downward cold transitions release energy $`q`$ each, and the hot upward transition absorbs energy $`2q`$. A hot-to-cold device has $`0<\beta_H<\beta_C`$, equivalently $`z^2<h<1`$.
+Consequently, the two downward cold transitions release energy $`q`$ each, and the hot upward transition absorbs energy $`2q`$. A hot-to-cold device has $`0<\beta_H<\beta_C`$, equivalently $`z^2\lt h<1`$.
 
 The capture operators need not be Bohr eigenoperators of the fully split core Hamiltonian. Their eigenoperator property above is with respect to $`H_0`$. Merely writing adjoint jump pairs with scalar rate ratios would not justify a thermal interpretation relative to an arbitrary full Hamiltonian.
 
 Direct substitution also shows that each bath dissipator separately preserves its reference Gibbs state:
 
 ```math
-\mathcal D_r\!\left(\frac{e^{-\beta_rH_0}}{\operatorname{Tr}e^{-\beta_rH_0}}\right)=0,
+\mathcal D_r\!\left(\frac{e^{-\beta_rH_0}}{\mathrm{Tr}e^{-\beta_rH_0}}\right)=0,
 \qquad r\in\{C,H\}.
 ```
 
@@ -159,10 +159,10 @@ The temperatures are now independent of dimension, but the bare energy width is 
 ```math
 \mathbb E R=\frac{2/h_d+1}{g},
 \qquad
-\operatorname{Var}R=\frac{4/h_d^2+2/h_d+1}{g^2}.
+\mathrm{Var}R=\frac{4/h_d^2+2/h_d+1}{g^2}.
 ```
 
-If $`\theta\le\eta/44`$, then $`\operatorname{Var}R=O(d^\eta/g^2)`$ and $`\mathbb ER=O(d^{\eta/2}/g)`$. The return time is therefore subleading to the core mean $`\Theta(d/g)`$, and its variance fits within the allowed nearquadratic precision loss. The [finite-rate timing theorem](finite_rate_recycling.md) compares the physical generator to the reference at the same $`h_d`$; it does not set the hot ratio to a dimension-independent value during this comparison.
+If $`\theta\le\eta/44`$, then $`\mathrm{Var}R=O(d^\eta/g^2)`$ and $`\mathbb ER=O(d^{\eta/2}/g)`$. The return time is therefore subleading to the core mean $`\Theta(d/g)`$, and its variance fits within the allowed nearquadratic precision loss. The [finite-rate timing theorem](finite_rate_recycling.md) compares the physical generator to the reference at the same $`h_d`$; it does not set the hot ratio to a dimension-independent value during this comparison.
 
 The quantifier is: for every fixed $`\eta>0`$, choose a sufficiently large but fixed temperature ratio, then take $`d\to\infty`$. This argument does not show that a single prescribed finite temperature ratio achieves every exponent arbitrarily close to two.
 
@@ -202,15 +202,11 @@ With bounded spectral coefficients, the core contribution from independent captu
 
 Trushechkin's theorem gives reduced-state convergence uniformly over each fixed finite interval $`0\le\lambda^2t\le\tau_1`$. Its thermodynamic accounting uses $`H_0`$ at the order retained by the master equation; replacing it by the fully split Hamiltonian changes terms beyond that order. [Gerry and Segal](../references/REFERENCES.md#gerry2023) develop fluctuation statistics for the unified generator. Neither statement alone is a uniform microscopic theorem for all long-time count cumulants of this growing family.
 
-The established sequence here is
+The established sequence has three ordered steps:
 
-```math
-\text{fixed }d\text{ weak-coupling limit}
-\quad\longrightarrow\quad
-\text{long-time statistics of the limiting GKLS device}
-\quad\longrightarrow\quad
-d\to\infty.
-```
+1. At each fixed $`d`$, take the clustered weak-coupling limit.
+2. Compute the long-time counting statistics of the limiting GKLS device.
+3. Take $`d\to\infty`$ through the specified family.
 
 A fixed-coupling microscopic theorem would additionally need error control for the tilted dynamics or the relevant current cumulants, with its dimension dependence. That extension is not used in the timing result. The entropy telescoping formula is exact within the limiting thermal generator and needs no assumption of a same-protocol fluctuation symmetry under time reversal of complex coupling phases.
 
