@@ -202,15 +202,11 @@ With bounded spectral coefficients, the core contribution from independent captu
 
 Trushechkin's theorem gives reduced-state convergence uniformly over each fixed finite interval $`0\le\lambda^2t\le\tau_1`$. Its thermodynamic accounting uses $`H_0`$ at the order retained by the master equation; replacing it by the fully split Hamiltonian changes terms beyond that order. [Gerry and Segal](../references/REFERENCES.md#gerry2023) develop fluctuation statistics for the unified generator. Neither statement alone is a uniform microscopic theorem for all long-time count cumulants of this growing family.
 
-The established sequence here is
+The established sequence has three ordered steps:
 
-```math
-\text{fixed }d\text{ weak-coupling limit}
-\quad\longrightarrow\quad
-\text{long-time statistics of the limiting GKLS device}
-\quad\longrightarrow\quad
-d\to\infty.
-```
+1. At each fixed $`d`$, take the clustered weak-coupling limit.
+2. Compute the long-time counting statistics of the limiting GKLS device.
+3. Take $`d\to\infty`$ through the specified family.
 
 A fixed-coupling microscopic theorem would additionally need error control for the tilted dynamics or the relevant current cumulants, with its dimension dependence. That extension is not used in the timing result. The entropy telescoping formula is exact within the limiting thermal generator and needs no assumption of a same-protocol fluctuation symmetry under time reversal of complex coupling phases.
 
