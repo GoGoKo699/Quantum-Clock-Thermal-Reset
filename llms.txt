@@ -1,0 +1,34 @@
+# Quantum Clock Thermal Reset
+
+Question: can the useful timing advantage of a pure complete-reset quantum clock survive finite autonomous thermal recycling?
+
+The central result is a quantitative bound on signed-count precision for the full retained recycling generator. The quasiideal application has d+2 system levels, complete jump effect at most 2g I, precision at least c_eta d^(2-eta), current Theta(g/d), and g D_time=O(d^(-1+eta)) for each fixed 0<eta<1. Every classical finite-state Markov clock under the same full activity cap has g D_time>=1/2. The application uses logarithmic cyclic bath entropy and explicitly charged thermal gaps or cooling.
+
+## Authoritative routes
+
+- Scientific map: science/README.md
+- Mechanism, timing interpretation and cost boundary: science/interpretation.md
+- Input assumptions, complete jump list and output definitions: science/model.md
+- Explicit finite hypotheses, killed stability and quantitative error bound: science/finite_rate_recycling.md
+- Joint duration/reverse-count law, stationary state and tilted cumulants: science/counting_statistics.md
+- Reconstructed quasiideal input and dimensional application: science/quasiideal_application.md
+- Complete-activity classical benchmark: science/classical_comparison.md
+- Thermal balance, resource alternatives and microscopic limit order: science/thermodynamics.md
+- Closest prior results and exact added consequence: references/RELATED_WORK.md
+- Bibliographic versions and pinned mathematical notes: references/REFERENCES.md
+- Reproduction instructions and limits of finite checks: verification/README.md
+- Numerical implementation and recorded outputs: verification/check_clock.py, verification/finite_results.json
+
+## Distinctions to preserve
+
+- P=j/D_N; D_N is variance per unit time with no factor of two. D_time=D_N/j^2=1/(jP). The actual mean current is supplied.
+- Positive captures regenerate the entire enlarged clock at m. A block contains M negative captures and has signed reward 1-M. The mixed duration/reverse-count moment cannot be discarded.
+- The comparison removes cold reverse channels at a fixed hot ratio. A physical dimension-dependent relation h=z^(2theta) is imposed only after choosing the endpoint family.
+- For each target exponent loss eta, one may choose a fixed temperature ratio. One fixed finite ratio is not proved to achieve exponent 2-o(1).
+- Fixed bath temperatures require gaps O(log d); fixed gaps instead require progressively colder baths. Do not combine both alternatives into an all-resources-fixed claim.
+- Two extra system levels do not mean constant apparatus complexity. Up to d+2 engineered coupling channels and explicit energy resources are allowed.
+- The exact theorem concerns the limiting thermal GKLS device. Weak coupling at fixed dimension precedes long-time generator statistics and the dimension limit. Fixed-coupling microscopic counting convergence is not established.
+- The ideal quasiideal clock, serial thermal architecture and logarithmic-affinity strategy are inherited. The added theorem controls finite-rate signed cumulants and their simultaneous resource consequences.
+- Detector amplification, output-memory erasure, unknown-rate calibration, reservoir preparation and coupling fabrication remain separate costs.
+
+For a proof audit, follow model -> finite_rate_recycling -> counting_statistics -> quasiideal_application -> classical_comparison, with thermodynamics supplying the physical resource contract. For numerical reproduction, use verification/README.md and retain its finite tested scope.

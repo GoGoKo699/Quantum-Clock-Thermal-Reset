@@ -1,0 +1,406 @@
+{
+  "status": "passed",
+  "scope": "Finite algebra and counting-convention checks; not asymptotic scaling or microscopic bath validation.",
+  "error_normalization": "Currents, count noise, generator residuals and entropy rates are divided by g. States and Fano factors use absolute errors. Reset and reference moments use relative errors.",
+  "case_count": 4,
+  "check_count": 256,
+  "tolerances": {
+    "linear_residual": 2e-11,
+    "state_difference": 2e-10,
+    "imaginary_part": 2e-10,
+    "current_difference": 2e-10,
+    "noise_difference": 2e-09,
+    "fano_difference": 2e-08,
+    "reset_moment_relative": 2e-11,
+    "baseline_moment_relative": 2e-10,
+    "laplace_difference": 2e-12,
+    "tilted_current_difference": 2e-08,
+    "tilted_noise_difference": 2e-07,
+    "entropy_difference": 2e-10,
+    "positivity_slack": 2e-11,
+    "activity_slack": 2e-11
+  },
+  "maximum_errors": {
+    "activity_slack": 4.440892098500626e-16,
+    "reset_moment_relative": 1.0268488568404027e-15,
+    "laplace_difference": 4.440892098500626e-16,
+    "imaginary_part": 2.842610189207942e-13,
+    "linear_residual": 1.0081031399763249e-15,
+    "baseline_moment_relative": 1.0843870867199163e-15,
+    "state_difference": 3.6092136011435935e-16,
+    "positivity_slack": 0.0,
+    "current_difference": 9.151163602384965e-17,
+    "noise_difference": 8.326672684688674e-17,
+    "tilted_current_difference": 4.3345882438927674e-13,
+    "tilted_noise_difference": 5.46870521089815e-10,
+    "fano_difference": 4.440892098500626e-16,
+    "entropy_difference": 2.220446049250313e-16
+  },
+  "cases": [
+    {
+      "name": "irreversible_reference",
+      "d": 2,
+      "seed": 2718,
+      "g": 1.0,
+      "h": 0.5,
+      "z": 0.0,
+      "stall": false,
+      "capture_channels": 4,
+      "core_commutator_norm_over_g_squared": 0.0911067378689319,
+      "maximum_channel_overlap_over_g": 0.2646365317305442,
+      "core_effect_spectrum_over_g": [
+        0.15000000000000008,
+        0.7200000000000002
+      ],
+      "active_hamiltonian_norm_over_g": 0.23000000000000012,
+      "carrier_gap": 0.9,
+      "maximum_full_jump_effect_over_g": 1.9999999999999996,
+      "reset": {
+        "mean": 5.0,
+        "second_moment": 46.0,
+        "variance": 21.0,
+        "relative_errors": {
+          "mean": 0.0,
+          "second_moment": 0.0,
+          "variance": 0.0
+        },
+        "maximum_laplace_error": 0.0
+      },
+      "frozen_h_reference": {
+        "clean_mean": 2.6375076445657473,
+        "clean_second_moment": 21.157205860735615,
+        "block_mean": 7.637507644565748,
+        "block_second_moment": 93.53228230639311,
+        "relative_mean_error": 0.0,
+        "relative_second_moment_error": 3.0387058595769276e-16
+      },
+      "regenerative": {
+        "mean": 7.637507644565748,
+        "second_moment": 93.53228230639311,
+        "mean_reverse_count": 0.0,
+        "reverse_factorial_second": 0.0,
+        "duration_reverse_moment": 0.0,
+        "current": 0.1309327658364469,
+        "noise": 0.07901272818064745,
+        "killed_spectral_abscissa_over_g": -0.2126811157634342
+      },
+      "stationary": {
+        "current": 0.13093276583644686,
+        "noise": 0.07901272818064736,
+        "minimum_state_eigenvalue": 0.10501742861151207,
+        "hot_current": 0.13093276583644686,
+        "release_current": 0.13093276583644692
+      },
+      "tilted_eigenvalue_derivatives": {
+        "step": 0.001,
+        "current": 0.1309327658360134,
+        "noise": 0.07901272763377684,
+        "eigenvalues": {
+          "-0.002": -0.00026170756333598996,
+          "-0.001": -0.00013089326661278858,
+          "0.0": -3.116810422726262e-18,
+          "0.001": 0.0001309722793417871,
+          "0.002": 0.00026202361426845436
+        }
+      },
+      "fano_stationary": 0.6034603154976897,
+      "fano_regenerative_expansion": 0.6034603154976901,
+      "timing_diffusion": 4.608932772805664,
+      "affinity": null,
+      "entropy_rate": null,
+      "entropy_identity_error_over_g": null,
+      "errors": {
+        "current_over_g": 2.7755575615628914e-17,
+        "noise_over_g": 8.326672684688674e-17,
+        "stationary_state": 1.9488710429424626e-16,
+        "tilted_current_over_g": 4.3345882438927674e-13,
+        "tilted_noise_over_g": 5.46870521089815e-10,
+        "hot_current_conservation_over_g": 0.0,
+        "release_current_conservation_over_g": 5.551115123125783e-17,
+        "fano": 3.3306690738754696e-16
+      },
+      "stall_control": null
+    },
+    {
+      "name": "finite_reverse_slow_reset",
+      "d": 3,
+      "seed": 3141,
+      "g": 0.7,
+      "h": 0.08,
+      "z": 0.012,
+      "stall": false,
+      "capture_channels": 5,
+      "core_commutator_norm_over_g_squared": 0.07605304678153489,
+      "maximum_channel_overlap_over_g": 0.21888781016124295,
+      "core_effect_spectrum_over_g": [
+        0.15000000000000008,
+        0.435,
+        0.7199999999999998
+      ],
+      "active_hamiltonian_norm_over_g": 0.23000000000000015,
+      "carrier_gap": 0.63,
+      "maximum_full_jump_effect_over_g": 2.0000000000000004,
+      "reset": {
+        "mean": 37.14285714285716,
+        "second_moment": 2708.163265306125,
+        "variance": 1328.57142857143,
+        "relative_errors": {
+          "mean": 3.825999346400539e-16,
+          "second_moment": 8.395862921415501e-16,
+          "variance": 1.0268488568404027e-15
+        },
+        "maximum_laplace_error": 4.440892098500626e-16
+      },
+      "frozen_h_reference": {
+        "clean_mean": 2.785092187113345,
+        "clean_second_moment": 20.456311005045023,
+        "block_mean": 39.92794932997049,
+        "block_second_moment": 2935.5121387824443,
+        "relative_mean_error": 3.559124611625153e-16,
+        "relative_second_moment_error": 1.0843870867199163e-15
+      },
+      "regenerative": {
+        "mean": 29.838413447449305,
+        "second_moment": 1603.061423902593,
+        "mean_reverse_count": 0.2835639793112213,
+        "reverse_factorial_second": 0.0007326784374015865,
+        "duration_reverse_moment": 8.458628133649418,
+        "current": 0.02401052663039704,
+        "noise": 0.02059970248883574,
+        "killed_spectral_abscissa_over_g": -0.05404034707081624
+      },
+      "stationary": {
+        "current": 0.02401052663039703,
+        "noise": 0.02059970248883573,
+        "minimum_state_eigenvalue": 0.01117001799603005,
+        "hot_current": 0.024010526630397037,
+        "release_current": 0.02401052663039703
+      },
+      "tilted_eigenvalue_derivatives": {
+        "step": 0.001,
+        "current": 0.02401052663041751,
+        "noise": 0.020599702757671225,
+        "eigenvalues": {
+          "-0.002": -4.7979873868737866e-05,
+          "-0.001": -2.4000229281001415e-05,
+          "0.0": -1.0175216784377062e-17,
+          "0.001": 2.4020828984291864e-05,
+          "0.002": 4.8062272688598246e-05
+        }
+      },
+      "fano_stationary": 0.8579446342820636,
+      "fano_regenerative_expansion": 0.8579446342820635,
+      "timing_diffusion": 35.732020687789344,
+      "affinity": 6.319968614080018,
+      "entropy_rate": 0.15174577471164166,
+      "entropy_identity_error_over_g": 3.9650822308041306e-17,
+      "errors": {
+        "current_over_g": 1.486905836551549e-17,
+        "noise_over_g": 1.486905836551549e-17,
+        "stationary_state": 4.897330531901773e-17,
+        "tilted_current_over_g": 2.925735051054598e-14,
+        "tilted_noise_over_g": 3.840507079022615e-10,
+        "hot_current_conservation_over_g": 9.912705577010326e-18,
+        "release_current_conservation_over_g": 0.0,
+        "fano": 1.1102230246251565e-16
+      },
+      "stall_control": null
+    },
+    {
+      "name": "slower_reset_multichannel",
+      "d": 4,
+      "seed": 1618,
+      "g": 1.3,
+      "h": 0.025,
+      "z": 0.035,
+      "stall": false,
+      "capture_channels": 6,
+      "core_commutator_norm_over_g_squared": 0.0697604161798161,
+      "maximum_channel_overlap_over_g": 0.19363793306184146,
+      "core_effect_spectrum_over_g": [
+        0.15,
+        0.3400000000000001,
+        0.5300000000000004,
+        0.7200000000000001
+      ],
+      "active_hamiltonian_norm_over_g": 0.23000000000000012,
+      "carrier_gap": 1.1700000000000002,
+      "maximum_full_jump_effect_over_g": 2.0000000000000004,
+      "reset": {
+        "mean": 62.30769230769229,
+        "second_moment": 7717.159763313609,
+        "variance": 3834.9112426035517,
+        "relative_errors": {
+          "mean": 2.2807544604645193e-16,
+          "second_moment": 1.1785355359578663e-16,
+          "variance": 5.929046620877368e-16
+        },
+        "maximum_laplace_error": 1.249000902703301e-16
+      },
+      "frozen_h_reference": {
+        "clean_mean": 1.597840945979352,
+        "clean_second_moment": 5.956531252442394,
+        "block_mean": 63.90553325367165,
+        "block_second_moment": 7922.231858603476,
+        "relative_mean_error": 1.111864183872179e-16,
+        "relative_second_moment_error": 2.2960567628053566e-16
+      },
+      "regenerative": {
+        "mean": 12.495939545810732,
+        "second_moment": 275.4014604186277,
+        "mean_reverse_count": 0.8402468565769076,
+        "reverse_factorial_second": 0.01383253786096139,
+        "duration_reverse_moment": 10.576119601420611,
+        "current": 0.012784404312891361,
+        "noise": 0.013565211343095194,
+        "killed_spectral_abscissa_over_g": -0.07180879625610133
+      },
+      "stationary": {
+        "current": 0.012784404312891306,
+        "noise": 0.01356521134309513,
+        "minimum_state_eigenvalue": 0.011399135446492053,
+        "hot_current": 0.012784404312891401,
+        "release_current": 0.012784404312891361
+      },
+      "tilted_eigenvalue_derivatives": {
+        "step": 0.001,
+        "current": 0.012784404313113305,
+        "noise": 0.013565210713442268,
+        "eigenvalues": {
+          "-0.002": -2.5541692955042528e-05,
+          "-0.001": -1.2777623551683967e-05,
+          "0.0": 3.769025564738515e-16,
+          "0.001": 1.2791188764104858e-05,
+          "0.002": 2.5595953813908408e-05
+        }
+      },
+      "fano_stationary": 1.0610749637678845,
+      "fano_regenerative_expansion": 1.061074963767885,
+      "timing_diffusion": 82.99760691219198,
+      "affinity": 3.0159349808715104,
+      "entropy_rate": 0.038556932176853326,
+      "entropy_identity_error_over_g": 1.2810265668751805e-16,
+      "errors": {
+        "current_over_g": 4.270088556250602e-17,
+        "noise_over_g": 4.9372898931647584e-17,
+        "stationary_state": 2.22452009915174e-16,
+        "tilted_current_over_g": 1.7076884778050453e-13,
+        "tilted_noise_over_g": 4.84348354692696e-10,
+        "hot_current_conservation_over_g": 7.339214706055722e-17,
+        "release_current_conservation_over_g": 4.270088556250602e-17,
+        "fano": 4.440892098500626e-16
+      },
+      "stall_control": null
+    },
+    {
+      "name": "thermal_stall",
+      "d": 3,
+      "seed": 1414,
+      "g": 1.0,
+      "h": 0.16000000000000003,
+      "z": 0.4,
+      "stall": true,
+      "capture_channels": 5,
+      "core_commutator_norm_over_g_squared": 0.08035296147290687,
+      "maximum_channel_overlap_over_g": 0.2828777425418863,
+      "core_effect_spectrum_over_g": [
+        0.15000000000000038,
+        0.43500000000000016,
+        0.7200000000000006
+      ],
+      "active_hamiltonian_norm_over_g": 0.22999999999999998,
+      "carrier_gap": 0.9,
+      "maximum_full_jump_effect_over_g": 2.0,
+      "reset": {
+        "mean": 13.499999999999998,
+        "second_moment": 351.9999999999999,
+        "variance": 169.74999999999994,
+        "relative_errors": {
+          "mean": 0.0,
+          "second_moment": 0.0,
+          "variance": 0.0
+        },
+        "maximum_laplace_error": 5.551115123125783e-17
+      },
+      "frozen_h_reference": {
+        "clean_mean": 3.326636112060175,
+        "clean_second_moment": 19.200037387749035,
+        "block_mean": 16.82663611206017,
+        "block_second_moment": 461.0192124133736,
+        "relative_mean_error": 0.0,
+        "relative_second_moment_error": 0.0
+      },
+      "regenerative": {
+        "mean": 4.521072796934863,
+        "second_moment": 35.33998978537621,
+        "mean_reverse_count": 1.0,
+        "reverse_factorial_second": 0.18560273705413066,
+        "duration_reverse_moment": 5.022001850856976,
+        "current": 0.0,
+        "noise": 0.041052808789091635,
+        "killed_spectral_abscissa_over_g": -0.2563994233342948
+      },
+      "stationary": {
+        "current": -4.760149934804202e-17,
+        "noise": 0.04105280878909162,
+        "minimum_state_eigenvalue": 0.06779661016949151,
+        "hot_current": 4.163336342344337e-17,
+        "release_current": 4.3910136675807625e-17
+      },
+      "tilted_eigenvalue_derivatives": {
+        "step": 0.001,
+        "current": 2.9847652696757204e-13,
+        "noise": 0.041052808410643384,
+        "eigenvalues": {
+          "-0.002": 8.210267566197466e-08,
+          "-0.001": 2.0526035684738608e-08,
+          "0.0": 2.6035094279401813e-16,
+          "0.001": 2.0526775005844157e-08,
+          "0.002": 8.210858664910073e-08
+        }
+      },
+      "fano_stationary": null,
+      "fano_regenerative_expansion": null,
+      "timing_diffusion": null,
+      "affinity": 2.220446049250313e-16,
+      "entropy_rate": -7.967889148785379e-17,
+      "entropy_identity_error_over_g": 7.967889148785378e-17,
+      "errors": {
+        "current_over_g": 4.760149934804202e-17,
+        "noise_over_g": 1.3877787807814457e-17,
+        "stationary_state": 3.6092136011435935e-16,
+        "tilted_current_over_g": 2.9852412846692007e-13,
+        "tilted_noise_over_g": 3.784482380253529e-10,
+        "hot_current_conservation_over_g": 8.923486277148539e-17,
+        "release_current_conservation_over_g": 9.151163602384965e-17
+      },
+      "stall_control": {
+        "bare_gibbs_unnormalized_weights": [
+          1.0,
+          1.0,
+          1.0,
+          2.5,
+          0.4
+        ],
+        "gibbs_residual_over_g": 3.469543821117573e-17,
+        "gibbs_state_distance": 3.0538999235692313e-16,
+        "maximum_jump_pair_residual_over_g": 1.5937038695592026e-17,
+        "absolute_currents_over_g": {
+          "current": 4.760149934804202e-17,
+          "hot_current": 4.163336342344337e-17,
+          "release_current": 4.3910136675807625e-17
+        },
+        "fano_and_timing_diffusion_formed": false
+      }
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "float_dtype": "complex128 / float64"
+  },
+  "runtime_seconds": 0.026327297999159782,
+  "script_sha256": "472f40a2f13fc4e16babc9cb4d587477bd588871b2e054cbe8cdc6cc2feb58ce",
+  "reproduce": "python verification/check_clock.py --output verification/finite_results.json"
+}
