@@ -140,3 +140,11 @@ Daniel Burgarth, Paolo Facchi, and Robin Hillier, **“Control of Quantum Noise:
 - [Pinned repository](https://github.com/GoGoKo699/Quantum-Clock-Restart-Limits/tree/4e275bdc621e7fa250a19c2e29f122499095bdfc).
 - [Pinned quantum construction](https://github.com/GoGoKo699/Quantum-Clock-Restart-Limits/blob/4e275bdc621e7fa250a19c2e29f122499095bdfc/science/quantum_construction.md).
 - The bounded-strength normalization of the inherited quasiideal clock and the distinction between tick precision and elapsed-time diffusion. Its noise mechanism is an unobserved whole-device restart, not the thermal interface studied here.
+
+## Landi2024 — educational anchor
+
+Gabriel T. Landi, Michael J. Kewming, Mark T. Mitchison and Patrick P. Potts, **“Current Fluctuations in Open Quantum Systems: Bridging the Gap Between Quantum Continuous Measurements and Full Counting Statistics,”** *PRX Quantum* **5**, 020201 (2024).
+
+- [Published article](https://doi.org/10.1103/PRXQuantum.5.020201).
+- [Author-hosted published PDF](https://www.pas.rochester.edu/~gtlandi/download/prxquantum.5.020201.pdf).
+- The single educational source for quantum jumps, waiting-time statistics and current fluctuations. The [bridge](../learning/anchor_bridge.md) identifies the required passages and the additional project-specific arguments.

@@ -19,7 +19,7 @@ Let $`N(t)`$ be the sum of the signed output marks, and suppose its stationary m
 
 ```math
 D_{\rm time}=
-\lim_{t\to\infty}\frac{\operatorname{Var}[N(t)/j]}t.
+\lim_{t\to\infty}\frac{\mathrm{Var}[N(t)/j]}t.
 ```
 
 As in the quantum application, estimating an unknown calibration parameter is a separate task. The output supplies event marks or their accumulated count, without externally supplied timestamps.
@@ -30,7 +30,7 @@ Run an independent Poisson process of opportunities at rate $`\lambda_*`$. At an
 
 This reproduces the original continuous-time marked process. The Poisson waiting times are independent of the embedded discrete marked chain. Its state transition kernel is $`P=I+G/\lambda_*`$, where $`G`$ is the ordinary state generator, with physical self-events retained in the mark law. A stationary distribution of $`G`$ is also stationary for $`P`$.
 
-For stationary initialization, every embedded mark $`Y_r`$ therefore has mean $`j/\lambda_*`$. If $`K(t)\sim\operatorname{Poisson}(\lambda_*t)`$ is the opportunity count, then
+For stationary initialization, every embedded mark $`Y_r`$ therefore has mean $`j/\lambda_*`$. If $`K(t)\sim\mathrm{Poisson}(\lambda_*t)`$ is the opportunity count, then
 
 ```math
 N(t)=\sum_{r=1}^{K(t)}Y_r,\qquad
@@ -41,10 +41,10 @@ No independence of successive marks is assumed. They may carry any correlations 
 
 ```math
 \begin{aligned}
-\operatorname{Var}N(t)
-&=\mathbb E[\operatorname{Var}(N(t)\mid K(t))]
-+\operatorname{Var}(\mathbb E[N(t)\mid K(t)])\\
-&\geq\frac{j^2}{\lambda_*^2}\operatorname{Var}K(t)
+\mathrm{Var}N(t)
+&=\mathbb E[\mathrm{Var}(N(t)\mid K(t))]
++\mathrm{Var}(\mathbb E[N(t)\mid K(t)])\\
+&\geq\frac{j^2}{\lambda_*^2}\mathrm{Var}K(t)
 =\frac{j^2t}{\lambda_*}.
 \end{aligned}
 ```

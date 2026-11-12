@@ -19,7 +19,7 @@ r_h&=\frac{2/h+1}{g},
 &v_0&=\mathbb E X^2+2\mu r_h+s_h,
 &F_0&=\frac{\sigma^2+v_h}{\mu_0^2},\\
 B&=B_C+r_h,
-&a&=\operatorname{Tr}Q,
+&a&=\mathrm{Tr}Q,
 &\Lambda&=2(a+g),
 \qquad \delta=z\Lambda.
 \end{aligned}
@@ -73,7 +73,7 @@ The enlarged device then has exactly $`d+2`$ states and summed jump effect at mo
 The last moment condition in the theorem is mild. Since $`v_h\le r_h^2`$, it follows whenever the clean clock satisfies $`\sigma^2\le\mu^2`$:
 
 ```math
-\operatorname{Var}(X+R_h)
+\mathrm{Var}(X+R_h)
 =\sigma^2+v_h
 \le\mu^2+r_h^2
 \le(\mu+r_h)^2.
@@ -126,7 +126,7 @@ Solving yields $`s_m=s_h`$ and $`s_h-r_h^2=v_h`$ as stated above. For $`h=1/2`$,
 \qquad
 \mathbb E R_{1/2}^2=\frac{46}{g^2},
 \qquad
-\operatorname{Var}R_{1/2}=\frac{21}{g^2}.
+\mathrm{Var}R_{1/2}=\frac{21}{g^2}.
 ```
 
 The release prepares exactly $`P_\psi`$. The next core waiting time is therefore independent of the entire preceding reset phase. The reference positive-capture block is exactly
@@ -146,7 +146,7 @@ Let $`\mathcal C_+`$ be the positive-capture recycling map,
 =\sum_kA_k\rho A_k^\dagger
 =P_m\,\ell_+(\rho),
 \qquad
-\ell_+(\rho)=\operatorname{Tr}(Q\rho_C).
+\ell_+(\rho)=\mathrm{Tr}(Q\rho_C).
 ```
 
 Here $`\rho_C`$ denotes the core block of $`\rho`$. Remove this map from the full generator but retain its anticommutator:
@@ -237,18 +237,18 @@ The identity $`\mathcal K_0^\dagger(S_0)=-I`$ and the dual norm bound give
 \le-(1-\delta B)I.
 ```
 
-For a normalized positive initial state, let $`\rho_t=e^{t\mathcal K_z}(\rho)`$ and $`u(t)=\operatorname{Tr}(S_0\rho_t)`$. If $`\delta B<1`$,
+For a normalized positive initial state, let $`\rho_t=e^{t\mathcal K_z}(\rho)`$ and $`u(t)=\mathrm{Tr}(S_0\rho_t)`$. If $`\delta B<1`$,
 
 ```math
 u'(t)
-\le-(1-\delta B)\operatorname{Tr}\rho_t
+\le-(1-\delta B)\mathrm{Tr}\rho_t
 \le-\frac{1-\delta B}{B}u(t).
 ```
 
 Using $`I/g\le S_0\le BI`$ gives the explicit tail bound
 
 ```math
-\operatorname{Tr}\rho_t
+\mathrm{Tr}\rho_t
 \le gB\exp\!\left[-\frac{1-\delta B}{B}t\right].
 ```
 
@@ -307,12 +307,12 @@ The [joint-transform calculation](counting_statistics.md#2-the-joint-transform-o
 
 ```math
 \begin{aligned}
-\mu_z&=\operatorname{Tr}\mathcal R_z(P_m),\\
-v_z&=2\operatorname{Tr}\mathcal R_z^2(P_m),\\
-m_z&=z\operatorname{Tr}\mathcal I_-\mathcal R_z(P_m),\\
-f_z&=2z^2\operatorname{Tr}
+\mu_z&=\mathrm{Tr}\mathcal R_z(P_m),\\
+v_z&=2\mathrm{Tr}\mathcal R_z^2(P_m),\\
+m_z&=z\mathrm{Tr}\mathcal I_-\mathcal R_z(P_m),\\
+f_z&=2z^2\mathrm{Tr}
 \mathcal I_-\mathcal R_z\mathcal I_-\mathcal R_z(P_m),\\
-w_z&=z\operatorname{Tr}
+w_z&=z\mathrm{Tr}
 \bigl(\mathcal R_z\mathcal I_-\mathcal R_z
 +\mathcal I_-\mathcal R_z^2\bigr)(P_m).
 \end{aligned}

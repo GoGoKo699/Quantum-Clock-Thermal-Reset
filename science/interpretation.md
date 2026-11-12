@@ -38,7 +38,7 @@ With cold reverse channels switched off and the hot ratio $`h`$ held fixed, the 
 
 ```math
 \mathbb ER_h=\frac{2/h+1}{g},\qquad
-\operatorname{Var}R_h=\frac{4/h^2+2/h+1}{g^2}.
+\mathrm{Var}R_h=\frac{4/h^2+2/h+1}{g^2}.
 ```
 
 For $`h=1/2`$, these are $`5/g`$ and $`21/g^2`$. The full reference interval is the independent sum of the reset duration and the core interval. Consequently,

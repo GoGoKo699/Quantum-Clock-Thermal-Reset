@@ -10,7 +10,7 @@ Let $`\mathcal H_C`$ be the $`d`$-dimensional clock core, with Hamiltonian $`H_C
 
 ```math
 Q=\sum_{k=1}^{K}|v_k\rangle\langle v_k|\le g I_C,
-\qquad a=\operatorname{Tr}Q.
+\qquad a=\mathrm{Tr}Q.
 ```
 
 Add orthogonal states $`|m\rangle,|e\rangle`$. Write $`P_m=|m\rangle\langle m|`$, $`P_e=|e\rangle\langle e|`$, and extend $`H_C`$ by zero on the auxiliary states. The jump pairs are
@@ -48,7 +48,7 @@ The capture operators need not be Bohr eigenoperators of the fully split core Ha
 Direct substitution also shows that each bath dissipator separately preserves its reference Gibbs state:
 
 ```math
-\mathcal D_r\!\left(\frac{e^{-\beta_rH_0}}{\operatorname{Tr}e^{-\beta_rH_0}}\right)=0,
+\mathcal D_r\!\left(\frac{e^{-\beta_rH_0}}{\mathrm{Tr}e^{-\beta_rH_0}}\right)=0,
 \qquad r\in\{C,H\}.
 ```
 
@@ -159,10 +159,10 @@ The temperatures are now independent of dimension, but the bare energy width is 
 ```math
 \mathbb E R=\frac{2/h_d+1}{g},
 \qquad
-\operatorname{Var}R=\frac{4/h_d^2+2/h_d+1}{g^2}.
+\mathrm{Var}R=\frac{4/h_d^2+2/h_d+1}{g^2}.
 ```
 
-If $`\theta\le\eta/44`$, then $`\operatorname{Var}R=O(d^\eta/g^2)`$ and $`\mathbb ER=O(d^{\eta/2}/g)`$. The return time is therefore subleading to the core mean $`\Theta(d/g)`$, and its variance fits within the allowed nearquadratic precision loss. The [finite-rate timing theorem](finite_rate_recycling.md) compares the physical generator to the reference at the same $`h_d`$; it does not set the hot ratio to a dimension-independent value during this comparison.
+If $`\theta\le\eta/44`$, then $`\mathrm{Var}R=O(d^\eta/g^2)`$ and $`\mathbb ER=O(d^{\eta/2}/g)`$. The return time is therefore subleading to the core mean $`\Theta(d/g)`$, and its variance fits within the allowed nearquadratic precision loss. The [finite-rate timing theorem](finite_rate_recycling.md) compares the physical generator to the reference at the same $`h_d`$; it does not set the hot ratio to a dimension-independent value during this comparison.
 
 The quantifier is: for every fixed $`\eta>0`$, choose a sufficiently large but fixed temperature ratio, then take $`d\to\infty`$. This argument does not show that a single prescribed finite temperature ratio achieves every exponent arbitrarily close to two.
 

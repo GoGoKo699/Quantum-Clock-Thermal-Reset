@@ -21,13 +21,13 @@ Assume the stability condition proved in [Finite-rate recycling](finite_rate_rec
 Since all removed trace loss is positive-capture loss,
 
 ```math
-\operatorname{Tr}\mathcal K_z(\rho)=-\ell_+(\rho).
+\mathrm{Tr}\mathcal K_z(\rho)=-\ell_+(\rho).
 ```
 
 Integrating this identity along the killed semigroup and using its decay gives the operator identity
 
 ```math
-\ell_+\mathcal R_z=\operatorname{Tr}.
+\ell_+\mathcal R_z=\mathrm{Tr}.
 ```
 
 In particular, the positive-capture density from $`P_m`$ is
@@ -64,14 +64,14 @@ Multiplying each reverse-capture trajectory by a factor $`u`$ changes its recycl
 
 Here $`\mathbb I`$ is the identity superoperator. At $`(s,u)=(0,1)`$, the inverse exists. Its finite-dimensional analytic continuation exists in a neighborhood of that point. For real parameters sufficiently close to it, the perturbed killed semigroup remains exponentially stable and its trajectory expansion has nonnegative weights. Thus the transform is an actual exponential-moment transform there, not just a formal matrix expression. This establishes the joint moments needed below.
 
-Differentiate the inverse and use $`\ell_+\mathcal R_z=\operatorname{Tr}`$. The first two duration moments are
+Differentiate the inverse and use $`\ell_+\mathcal R_z=\mathrm{Tr}`$. The first two duration moments are
 
 ```math
 \mu_z=\mathbb ET
-=\operatorname{Tr}\mathcal R_z(P_m),
+=\mathrm{Tr}\mathcal R_z(P_m),
 \qquad
 v_z=\mathbb ET^2
-=2\operatorname{Tr}\mathcal R_z^2(P_m).
+=2\mathrm{Tr}\mathcal R_z^2(P_m).
 ```
 
 The reverse-count moments are
@@ -79,9 +79,9 @@ The reverse-count moments are
 ```math
 \begin{aligned}
 m_z:=\mathbb EM
-&=z\operatorname{Tr}\mathcal I_-\mathcal R_z(P_m),\\
+&=z\mathrm{Tr}\mathcal I_-\mathcal R_z(P_m),\\
 f_z:=\mathbb E[M(M-1)]
-&=2z^2\operatorname{Tr}
+&=2z^2\mathrm{Tr}
 \mathcal I_-\mathcal R_z\mathcal I_-\mathcal R_z(P_m).
 \end{aligned}
 ```
@@ -92,7 +92,7 @@ The mixed derivative gives
 \begin{aligned}
 w_z:=\mathbb E[TM]
 &=-\partial_s\partial_u\Phi_z(0,1)\\
-&=z\operatorname{Tr}\!\left[
+&=z\mathrm{Tr}\!\left[
 \bigl(\mathcal R_z\mathcal I_-\mathcal R_z
 +\mathcal I_-\mathcal R_z^2\bigr)(P_m)
 \right].
@@ -141,10 +141,10 @@ At $`z=0`$, the reverse count is identically zero and this reduces to the ordina
 
 ```math
 F_0=\frac{v_0}{\mu_0^2}-1
-=\frac{\operatorname{Var}T_0}{\mu_0^2}.
+=\frac{\mathrm{Var}T_0}{\mu_0^2}.
 ```
 
-At finite $`z`$, replacing $`F`$ by $`\operatorname{Var}T/\mu_z^2`$ would describe a different record: it would count every positive capture, including positive captures that cancel an earlier reverse capture.
+At finite $`z`$, replacing $`F`$ by $`\mathrm{Var}T/\mu_z^2`$ would describe a different record: it would count every positive capture, including positive captures that cancel an earlier reverse capture.
 
 ## 4. The stationary state and its positivity
 
@@ -179,7 +179,7 @@ The stationary positive and reverse capture intensities are, respectively,
 ```math
 j_+=\ell_+(\rho_{\mathrm{ss}})=\frac1{\mu_z},
 \qquad
-j_-=z\operatorname{Tr}\mathcal I_-(\rho_{\mathrm{ss}})
+j_-=z\mathrm{Tr}\mathcal I_-(\rho_{\mathrm{ss}})
 =\frac{m_z}{\mu_z}.
 ```
 
@@ -187,7 +187,7 @@ Their difference agrees with the regenerative current.
 
 ### Faithfulness and relaxation when $`Q>0`$
 
-Suppose $`z>0`$ and $`Q>0`$. The vectors $`v_k`$ then span the core. All capture operators and their adjoints occur with nonzero coefficients, and their products generate every matrix unit on $`\mathcal H_C\oplus\operatorname{span}\{m\}`$. The two hot operators connect $`e`$ to $`m`$. Hence the jump operators generate the full matrix algebra and occur in adjoint pairs.
+Suppose $`z>0`$ and $`Q>0`$. The vectors $`v_k`$ then span the core. All capture operators and their adjoints occur with nonzero coefficients, and their products generate every matrix unit on $`\mathcal H_C\oplus\mathrm{span}\{m\}`$. The two hot operators connect $`e`$ to $`m`$. Hence the jump operators generate the full matrix algebra and occur in adjoint pairs.
 
 To see why the stationary state is faithful, let $`P`$ be its support. For any vector orthogonal to this support, the corresponding diagonal matrix element of $`\mathcal L_z(\rho_{\mathrm{ss}})=0`$ is a sum of nonnegative jump contributions. Each must vanish, so every jump preserves the support. Because the adjoints also occur, the support is a reducing subspace for the full jump algebra. That algebra has no nontrivial reducing subspace. Thus $`P=I`$.
 
@@ -219,7 +219,7 @@ For real $`\chi`$ near zero,
 
 ```math
 \mathbb E_\rho[e^{\chi N(t)}]
-=\operatorname{Tr}e^{t\mathcal L_z(\chi)}(\rho).
+=\mathrm{Tr}e^{t\mathcal L_z(\chi)}(\rho).
 ```
 
 Under the faithfulness conditions just proved, the eigenvalue issuing from zero is simple, analytic, and dominant near $`\chi=0`$. Denote it by $`\lambda(\chi)`$, with $`\lambda(0)=0`$. It gives
